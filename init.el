@@ -3,13 +3,15 @@
   (concat path-to-emacsd subpath))
 
 (add-to-list 'load-path path-to-emacsd)
-(add-to-list 'load-path (get-full-path "mylib/"))
-;; (add-to-list 'load-path (get-full-path "plugins/"))
+(add-to-list 'load-path (get-full-path "customizations/"))
+(add-to-list 'load-path (get-full-path "customizations/packages/"))
+(add-to-list 'load-path (get-full-path "plugins/"))
+(add-to-list 'load-path (get-full-path "plugins/smex/"))
 
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
-
+(load "smex.el")
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
 (load "hsmode.el")
