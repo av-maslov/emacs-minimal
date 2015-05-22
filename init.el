@@ -5,7 +5,7 @@
 (setq visible-bell 1) 
 (require 'ido)
 (ido-mode t)
-
+(global-hl-line-mode 1)
 (global-linum-mode 1)
 
 ;; Key bindings
@@ -21,7 +21,7 @@
   (concat path-to-emacsd subpath))
 
 ;; Uncomment this to increase font size
-(set-face-attribute 'default nil :height 110)
+;; (set-face-attribute 'default nil :height 110)
 
 ;; (add-to-list 'load-path (get-full-path "plugins/"))
 
