@@ -4,7 +4,7 @@ Preinstalled packages:
 
 - [Solarized color theme](https://github.com/sellout/emacs-color-theme-solarized)
 
-Next packages are installed using
+The next packages are installed using package manager
 
      M-x package-list-packages
 
