@@ -10,3 +10,4 @@ Next packages are installed using
 
 - [haskell-mode](https://github.com/haskell/haskell-mode)
 - [auto-complete](https://github.com/auto-complete/auto-complete)
+- [magit-status](http://magit.vc/)
