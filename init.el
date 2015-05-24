@@ -13,10 +13,12 @@
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
+
 ;; Packages settings
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
+(require 'sr-speedbar) ;; sr-speedbar-open/close
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
 (load "hsmode.el")
