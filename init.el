@@ -23,6 +23,7 @@
 ;; M-x package-list-packages
 (load "hsmode.el")
 (load "autocomplete.el")
+(load "magit.el")
 
 (require 'epa-file)
 (epa-file-enable)
