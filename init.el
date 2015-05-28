@@ -19,6 +19,8 @@
 (load "acejump.el")
 (load "highlight-symbol.el")
 (require 'sr-speedbar) ;; sr-speedbar-open/close
+(load "eldoc.el")
+(load "paredit.el")
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
 (load "hsmode.el")
