@@ -9,6 +9,7 @@
 (add-to-list 'load-path (get-full-path "plugins/smex/"))
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
+(add-to-list 'load-path (get-full-path "plugins/autopair/"))
 
 (load "colors.el")
 (load "ui.el")
@@ -18,9 +19,8 @@
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
+(load "autopair.el")
 (require 'sr-speedbar) ;; sr-speedbar-open/close
-(load "eldoc.el")
-(load "paredit.el")
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
 (load "hsmode.el")

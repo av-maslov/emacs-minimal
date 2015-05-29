@@ -13,3 +13,7 @@
 (global-set-key [S-down] 'forward-paragraph)     ;; Jump to next paragraph
 ;; Switch window with Ctrl-TAB 
 (global-set-key [C-tab] 'other-window)
+
+;; iBufer: http://emacswiki.org/emacs/IbufferMode
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(autoload 'ibuffer "ibuffer" "List buffers." t)
