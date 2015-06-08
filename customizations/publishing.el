@@ -1,4 +1,7 @@
 ;;
+
+(setq org-export-html-postamble nil)
+
 (setq basedir1 "C:/MyTemp/_GITLOCAL/stat-learning.github.io/p/")
 
 (setq org-publish-project-alist
