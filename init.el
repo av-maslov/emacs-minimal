@@ -9,7 +9,6 @@
 (add-to-list 'load-path (get-full-path "plugins/smex/"))
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
-(add-to-list 'load-path (get-full-path "plugins/autopair/"))
 
 (load "colors.el")
 (load "ui.el")
