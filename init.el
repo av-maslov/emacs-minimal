@@ -1,4 +1,5 @@
-(setq path-to-emacsd "~/.emacs.d/")
+;; (setq path-to-emacsd "~/.emacs.d/")
+(setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
 
