@@ -26,6 +26,8 @@
 (load "autocomplete.el")
 (load "magit.el")
 
+(load "scalamode.el")
+
 (require 'epa-file)
 (epa-file-enable)
 
