@@ -1,8 +1,8 @@
-(setq path-to-emacsd "C:/MyTemp/_emacs.d/")
+(setq path-to-emacsd "~/.emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
 
-(add-to-list 'load-path path-to-emacsd)
+;; (add-to-list 'load-path path-to-emacsd)
 (add-to-list 'load-path (get-full-path "customizations/"))
 (add-to-list 'load-path (get-full-path "customizations/packages/"))
 (add-to-list 'load-path (get-full-path "plugins/"))
@@ -18,13 +18,11 @@
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
-(load "autopair.el")
 (require 'sr-speedbar) ;; sr-speedbar-open/close
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
-(load "hsmode.el")
-(load "autocomplete.el")
-(load "magit.el")
+;; (load "autocomplete.el")
+;; (load "magit.el")
 
 (load "scalamode.el")
 
