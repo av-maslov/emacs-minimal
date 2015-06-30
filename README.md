@@ -7,6 +7,7 @@ Preinstalled packages:
 - [ace-jump-mode](https://github.com/winterTTr/ace-jump-mode)
 - [highlight-symbol.el](https://github.com/nschum/highlight-symbol.el)
 - [SrSpeedbar](http://www.emacswiki.org/emacs/SrSpeedbar)
+- [scala-mode2](https://github.com/hvesalai/scala-mode2)
 
 The next packages are installed using package manager
 
