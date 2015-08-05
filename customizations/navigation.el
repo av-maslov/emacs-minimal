@@ -17,3 +17,10 @@
 ;; iBufer: http://emacswiki.org/emacs/IbufferMode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (autoload 'ibuffer "ibuffer" "List buffers." t)
+
+;; Override Ctrl-TAB in org mode
+;; http://stackoverflow.com/questions/4333467/override-ctrl-tab-in-emacs-org-mode
+(add-hook 'org-mode-hook
+          '(lambda ()
+             (define-key org-mode-map [(control tab)] nil)))
+
