@@ -11,3 +11,6 @@
 (add-hook 'calendar-load-hook
 	  (lambda ()
 	    (calendar-set-date-style 'european)))
+	    
+;; Set window size
+(when window-system (set-frame-size (selected-frame) 120 50))
