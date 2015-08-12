@@ -2,6 +2,9 @@
 (setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
+  
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
+(desktop-save-mode 1)
 
 ;; (add-to-list 'load-path path-to-emacsd)
 (add-to-list 'load-path (get-full-path "customizations/"))
