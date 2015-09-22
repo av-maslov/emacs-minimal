@@ -20,6 +20,7 @@
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
+(load "deftplugin.el")
 
 ;; Packages settings
 (load "smex.el")
