@@ -4,7 +4,10 @@
   (concat path-to-emacsd subpath))
   
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
-(desktop-save-mode 1)
+(desktop-save-mode 0)
+
+;; if symon is installed
+;; (require 'symon)
 
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
