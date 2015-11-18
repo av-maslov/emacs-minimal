@@ -6,8 +6,12 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
 (desktop-save-mode 0)
 
-;; if symon is installed
+;;; After symon is installed
 ;; (require 'symon)
+;;; after auto-complete is installed
+;;; http://auto-complete.org/doc/manual.html#after-installation-check
+;; (require 'auto-complete-config)
+;; (ac-config-default)
 
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
