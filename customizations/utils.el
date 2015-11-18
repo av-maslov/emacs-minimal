@@ -2,18 +2,23 @@
 ;;   (interactive)
 ;;   (insert (format-time-string "<%Y-%m-%d>")))
    
+;; Insert time stamp
 (defun ts ()
    (interactive)
    (insert (format-time-string "%Y-%m-%d")))
 
+;; Insert focus item 
+(defun it ()
+  (interactive)
+  (insert(concat "* " (format-time-string "%Y-%m-%d")))
+  (insert
+"
 
-(setq org-timer-default-timer 20)
-;; org-timer-set timer - run timer
-(add-hook 'org-clock-in-hook (lambda ()
-   (if (not org-timer-current-timer) 
-	  (org-timer-set-timer '(16)))))
-	 
-	 
+| LA     | [ ]             |
+| ML     | [ ] [ ] [ ]     |
+| Thesis | [ ] [ ] [ ] [ ] |
+"))
+
 ;; mark position to return
 ;; ctrl-f7 go back
 ;; http://www.tonyballantyne.com/EmacsWritingTips.html
