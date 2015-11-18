@@ -15,3 +15,4 @@ The next packages are installed using package manager
 
 - [auto-complete](https://github.com/auto-complete/auto-complete)
 - [magit-status](http://magit.vc/)
+- [symon](https://melpa.org/?utm_source=dlvr.it&utm_medium=twitter#/symon) tiny graphical system monitor
