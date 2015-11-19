@@ -4,7 +4,7 @@
   (concat path-to-emacsd subpath))
   
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
-(desktop-save-mode 0)
+;; (desktop-save-mode 0)
 
 ;;; After symon is installed
 ;; (require 'symon)
@@ -12,6 +12,11 @@
 ;;; http://auto-complete.org/doc/manual.html#after-installation-check
 ;; (require 'auto-complete-config)
 ;; (ac-config-default)
+
+;; Vim mode
+(require 'evil)
+(evil-mode 1)
+
 
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
