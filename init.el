@@ -17,6 +17,9 @@
 (require 'evil)
 (evil-mode 1)
 
+;; http://ergoemacs.org/emacs/emacs_insert_brackets_by_pair.html 
+;; auto close bracket insertion. New in emacs 24
+(electric-pair-mode 1)
 
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
