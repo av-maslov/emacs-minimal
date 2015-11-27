@@ -20,6 +20,14 @@
 
 "))
 
+;; timer 20 mins
+(setq org-timer-default-timer 20)
+(defun tm
+ (interactive)
+ (org-timer-set-timer))
+;; ... end timer 20 mins
+
+
 ;; mark position to return
 ;; ctrl-f7 go back
 ;; http://www.tonyballantyne.com/EmacsWritingTips.html
