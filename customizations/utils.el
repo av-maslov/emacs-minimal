@@ -22,10 +22,13 @@
 
 ;; timer 20 mins
 (setq org-timer-default-timer 20)
-(setq org-timer-default-timer 20)
 (defun tmr ()
  (interactive)
  (org-timer-set-timer))
+
+(defun stmr ()
+ (interactive)
+ (org-timer-stop))
 ;; ... end timer 20 mins
 
 
