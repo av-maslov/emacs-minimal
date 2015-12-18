@@ -14,9 +14,11 @@
   (insert
 "
 
-| LA              | [ ]                    |
-| Thesis / Papers | [ ] [ ] [ ] [ ] [ ] [ ]|
-| ML              | [ ]                    |
+| LA              | [ ] * 1 |
+| Thesis / Papers | [ ] * 8 |
+
+Maybe 5-10 min
+- ML lib
 
 "))
 
