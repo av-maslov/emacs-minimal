@@ -24,6 +24,11 @@
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
 
+;; Fireplace
+;; M-x byte-compile-file
+;; (load (get-full-path "plugins/fireplace/fireplace"))
+;; END Fireplace
+
 ;; (add-to-list 'load-path path-to-emacsd)
 (add-to-list 'load-path (get-full-path "customizations/"))
 (add-to-list 'load-path (get-full-path "customizations/packages/"))
