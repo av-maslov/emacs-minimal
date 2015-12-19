@@ -26,7 +26,8 @@
 
 ;; Fireplace
 ;; M-x byte-compile-file
-;; (load (get-full-path "plugins/fireplace/fireplace"))
+(compile-if-not-compiled (get-full-path "plugins/fireplace/") "fireplace.el")
+(load (get-full-path "plugins/fireplace/fireplace"))
 ;; END Fireplace
 
 ;; (add-to-list 'load-path path-to-emacsd)

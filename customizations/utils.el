@@ -40,3 +40,16 @@ Maybe 5-10 min
 (global-set-key (kbd "<f7>") 'org-mark-ring-push)
 (global-set-key (kbd "C-<f7>") 'org-mark-ring-goto)
 
+;; Compile file if it is not compiled
+(defun compile-if-not-compiled (dir filename)
+  (let ((fpath (concat dir filename))
+        (fname-without-ext (substring filename 0 -3))
+        (fname-compiled (concat (substring filename 0 -3) ".elc"))
+        )
+  (if (not (file-exists-p (concat dir fname-compiled)))
+    (byte-compile-file (concat dir filename))
+    (message (concat "File" (concat dir filename) " is compiled" ))
+   )
+  ))
+;;(let ((f (concat "kde" "wwd")))
+;;  (insert f))
