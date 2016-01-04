@@ -47,8 +47,8 @@
 ;; M-x package-list-packages
 ;; (load "autocomplete.el")
 ;; (load "magit.el")
-
-(load "scalamode.el")
+;; (load "scalamode.el")
+;; (load "emacsess.el")
 
 (require 'epa-file)
 (epa-file-enable)
