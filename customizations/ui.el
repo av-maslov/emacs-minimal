@@ -1,5 +1,8 @@
 ;; User interface
 
+;; Set default font
+(set-default-font "Courier")
+
 ;; Disable tool- and menu- bars
 (tool-bar-mode -1)
 (menu-bar-mode -1)
