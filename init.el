@@ -31,12 +31,18 @@
 (add-to-list 'load-path (get-full-path "plugins/smex/"))
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
+(add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
 
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
 (load "deftplugin.el")
 (load "fireplace.el")
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+;; end yasnippt - separate file doesn't work
 
 ;; Packages settings
 (load "smex.el")

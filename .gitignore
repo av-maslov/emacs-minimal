@@ -3,3 +3,7 @@
 *.elc
 elpa/
 *.*~
+bookmarks
+smex-items
+ido.last
+ac-comphist.dat
