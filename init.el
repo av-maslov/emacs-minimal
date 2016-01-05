@@ -45,7 +45,7 @@
 (require 'sr-speedbar) ;; sr-speedbar-open/close
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
-;; (load "autocomplete.el")
+;; (load "autocomplete.el") ;; smth. is wrong with this initiialization, it doesn't enable auto-complete for julia files, but it works if i just run M-x auto-coplete-mode while julia file is opened
 ;; (load "magit.el")
 ;; (load "scalamode.el")
 ;; (load "emacsess.el")
