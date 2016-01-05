@@ -17,6 +17,15 @@
 (require 'evil)
 (evil-mode 1)
 
+(require 'whitespace)
+;; highlight long lines
+;; http://www.emacswiki.org/emacs/HighlightLongLines
+(setq whitespace-style '(lines))
+(setq whitespace-line-column 80)
+(global-whitespace-mode 1)
+(setq whitespace-style '(tabs trailing lines tab-mark))
+;; end highlight long lines
+
 ;; http://ergoemacs.org/emacs/emacs_insert_brackets_by_pair.html 
 ;; auto close bracket insertion. New in emacs 24
 (electric-pair-mode 1)
