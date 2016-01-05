@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: module
+# key: module
+# --
+module ${1:modulename}
+
+using ${2:#dependencies}
+
+import ${3:#methods to overload}
+
+export ${4:#types/methods to export}
+
+ ${5:#module body}
+
+end
