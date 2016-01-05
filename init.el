@@ -12,12 +12,12 @@
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
 (add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
-;; Settings
+;;... Settings
 (load "settings.el")
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
-;; Packages settings
+;;... Packages settings
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
@@ -41,17 +41,14 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 ;;-------------------- END PACKAGE DIRECTORIES MELPA
-
 ;;-------------------- Vim mode 
 (require 'evil)
 (evil-mode 1)
 ;;-------------------- End Vim mode 
-
 ;;-------------------- EPA
 (require 'epa-file)
 (epa-file-enable)
 ;;-------------------- End EPA
-
 ;;-------------------- WHITESPACE -----------------------;;
 (require 'whitespace)
 ;; highlight long lines
