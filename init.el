@@ -2,30 +2,8 @@
 (setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
-  
-;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
-;; (desktop-save-mode 0)
-
 ;;; After symon is installed
 ;; (require 'symon)
-;;; after auto-complete is installed
-;;; http://auto-complete.org/doc/manual.html#after-installation-check
-;; (require 'auto-complete-config)
-;; (ac-config-default)
-
-;; Vim mode
-(require 'evil)
-(evil-mode 1)
-
-(require 'whitespace)
-
-;; http://ergoemacs.org/emacs/emacs_insert_brackets_by_pair.html 
-;; auto close bracket insertion. New in emacs 24
-(electric-pair-mode 1)
-
-;; Use spaces instead of tabs when indenting
-(setq-default indent-tabs-mode nil)
-
 ;; (add-to-list 'load-path path-to-emacsd)
 (add-to-list 'load-path (get-full-path "customizations/"))
 (add-to-list 'load-path (get-full-path "customizations/packages/"))
@@ -34,18 +12,11 @@
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
 (add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
-
+;; Settings
+(load "settings.el")
 (load "colors.el")
 (load "ui.el")
 (load "navigation.el")
-(load "deftplugin.el")
-(load "fireplace.el")
-
-;; yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
-;; end yasnippt - separate file doesn't work
-
 ;; Packages settings
 (load "smex.el")
 (load "acejump.el")
@@ -53,33 +24,70 @@
 (require 'sr-speedbar) ;; sr-speedbar-open/close
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
-;; (load "autocomplete.el") ;; smth. is wrong with this initiialization, it doesn't enable auto-complete for julia files, but it works if i just run M-x auto-coplete-mode while julia file is opened
 ;; (load "magit.el")
 ;; (load "scalamode.el")
 ;; (load "emacsess.el")
-
-(require 'epa-file)
-(epa-file-enable)
-
-;;--- PACKAGE DIRECTORIES MELPA
+;;-------------------- PACKAGE DIRECTORIES MELPA
 (require 'package)
-
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
-
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
-
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
-
 (package-initialize)
-
 (when (not package-archive-contents)
   (package-refresh-contents))
+;;-------------------- END PACKAGE DIRECTORIES MELPA
 
+;;-------------------- Vim mode 
+(require 'evil)
+(evil-mode 1)
+;;-------------------- End Vim mode 
 
+;;-------------------- EPA
+(require 'epa-file)
+(epa-file-enable)
+;;-------------------- End EPA
 
+;;-------------------- WHITESPACE -----------------------;;
+(require 'whitespace)
+;; highlight long lines
+;; http://www.emacswiki.org/emacs/HighlightLongLines
+(setq whitespace-style '(lines))
+(setq whitespace-line-column 80)
+(global-whitespace-mode 1)
+(setq whitespace-style '(tabs trailing lines tab-mark))
+;; end highlight long lines
+;;-------------------- END WHITESPACE --------------------;;
+
+;;-------------------- YASNIPPET AND AUTOCOMPLETE ---------------------;;
+;; ... Yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+;; (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+;; http://sethlakowske.com/why-i-use-emacs/fix-yasnippet-and-autocomplete-tab-key-collision/
+;; Remove Yasnippet's default tab key binding
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+;; Set Yasnippet's key binding to shift+tab
+(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
+;; Alternatively use Control-c + tab
+(define-key yas-minor-mode-map (kbd "\C-c TAB") 'yas-expand)
+;; ... End Yasnippt - separate file doesn't work
+
+;; Auto-complete
+;; after auto-complete is installed
+;; http://auto-complete.org/doc/manual.html#after-installation-check
+;; http://auto-complete.org/doc/manual.html#installation
+;; https://github.com/auto-complete/auto-complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+(global-auto-complete-mode 1)
+;;(auto-complete-mode t)
+;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;; End Auto-complete
+;;-------------------- END YASNIPPET AND AUTOCOMPLETE ---------------------;;

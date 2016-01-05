@@ -33,3 +33,6 @@
 
 ;; show column numbers
 (setq column-number-mode t)
+
+;; Use spaces instead of tabs when indenting
+(setq-default indent-tabs-mode nil)
