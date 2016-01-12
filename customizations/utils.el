@@ -7,21 +7,6 @@
    (interactive)
    (insert (format-time-string "%Y-%m-%d")))
 
-;; Insert focus item 
-(defun it ()
-  (interactive)
-  (insert(concat "* " (format-time-string "%Y-%m-%d")))
-  (insert
-"
-
-| LA              | [ ] * 1 |
-| Thesis / Papers | [ ] * 8 |
-
-Maybe 5-10 min
-- ML lib
-
-"))
-
 ;; timer 20 mins
 (setq org-timer-default-timer 20)
 (defun tmr ()
