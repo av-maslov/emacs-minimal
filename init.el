@@ -15,6 +15,7 @@
 ;;... Settings
 (load "settings.el")
 (load "colors.el")
+(load "focus.el")
 (load "ui.el")
 (load "navigation.el")
 ;;... Packages settings
