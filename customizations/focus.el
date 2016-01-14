@@ -1,7 +1,7 @@
 ;; Insert focus item 
 (defun it ()
   (interactive)
-  (insert(concat "*** " (format-time-string "%Y-%m-%d")))
+  (insert(concat "* " (format-time-string "%Y-%m-%d")))
   (insert
 "
 
@@ -9,7 +9,6 @@
 | Thesis / Papers | [ ] * 0 |
 | Read Papers     | [ ] * 0 |
 
-Maybe 5-10 min
-- ML lib
-
+- One Haskell task
+- ML lib: 5-10 min
 "))
