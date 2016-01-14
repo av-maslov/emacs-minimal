@@ -42,6 +42,10 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 ;;-------------------- END PACKAGE DIRECTORIES MELPA
+;;------------------- HASKELL MODE
+(require 'cl-lib)
+(load "haskellmode.el")
+;;------------------- END HASKELL MODE
 ;;-------------------- Vim mode 
 (require 'evil)
 (evil-mode 1)
