@@ -47,8 +47,8 @@
 (load "haskellmode.el")
 ;;------------------- END HASKELL MODE
 ;;-------------------- Vim mode 
-(require 'evil)
-(evil-mode 1)
+;; (require 'evil)
+;; (evil-mode 1)
 ;;-------------------- End Vim mode 
 ;;-------------------- EPA
 (require 'epa-file)
