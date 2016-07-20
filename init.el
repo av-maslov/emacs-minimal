@@ -93,3 +93,6 @@
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 ;; End Auto-complete
 ;;-------------------- END YASNIPPET AND AUTOCOMPLETE ---------------------;;
+
+;; Magit
+(global-set-key (kbd "C-x G") 'magit-status)
