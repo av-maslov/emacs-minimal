@@ -47,8 +47,8 @@
 (load "haskellmode.el")
 ;;------------------- END HASKELL MODE
 ;;-------------------- Vim mode 
-(require 'evil)
-(evil-mode 1)
+;; (require 'evil)
+;; (evil-mode 1)
 ;;-------------------- End Vim mode 
 ;;-------------------- EPA
 (require 'epa-file)
@@ -93,3 +93,6 @@
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 ;; End Auto-complete
 ;;-------------------- END YASNIPPET AND AUTOCOMPLETE ---------------------;;
+
+;; Magit
+(global-set-key (kbd "C-x G") 'magit-status)

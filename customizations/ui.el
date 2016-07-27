@@ -1,7 +1,8 @@
 ;; User interface
 
 ;; Set default font
-(set-default-font "Courier")
+;; (set-default-font "Courier")
+(set-default-font "Lucida Console")
 
 ;; Disable tool- and menu- bars
 (tool-bar-mode -1)
