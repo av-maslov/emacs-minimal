@@ -1,3 +1,9 @@
+
+;; Ocaml; git clone https://github.com/ocaml/tuareg
+;;(add-to-list 'load-path "D:/../tuareg/")
+;;(load "D:/../tuareg/tuareg.el")
+
+
 ;; (setq path-to-emacsd "~/.emacs.d/")
 (setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
