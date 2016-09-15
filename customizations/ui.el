@@ -37,3 +37,8 @@
 
 ;; Use spaces instead of tabs when indenting
 (setq-default indent-tabs-mode nil)
+
+;; See matching pairs of parentheses 
+;; https://www.emacswiki.org/emacs/ShowParenMode
+(show-paren-mode 1)
+(setq show-paren-delay 0)
