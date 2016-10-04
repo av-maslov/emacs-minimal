@@ -1,3 +1,10 @@
+
+
+```
+M-x byte-compile rainbow-delimiters.el
+```
+
+
 # Emacs minimal settings
 
 Preinstalled packages:  
