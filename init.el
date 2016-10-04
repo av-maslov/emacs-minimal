@@ -3,7 +3,6 @@
 ;;(add-to-list 'load-path "D:/../tuareg/")
 ;;(load "D:/../tuareg/tuareg.el")
 
-
 ;; (setq path-to-emacsd "~/.emacs.d/")
 (setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
@@ -11,6 +10,7 @@
 ;;; After symon is installed
 ;; (require 'symon)
 ;; (add-to-list 'load-path path-to-emacsd)
+(add-to-list 'load-path (get-full-path "settings/"))
 (add-to-list 'load-path (get-full-path "customizations/"))
 (add-to-list 'load-path (get-full-path "customizations/packages/"))
 (add-to-list 'load-path (get-full-path "plugins/"))
@@ -103,4 +103,5 @@
 ;; Magit
 (global-set-key (kbd "C-x G") 'magit-status)
 
+(load "lisp-settings.el")
 (load "paredit-settings.el")
