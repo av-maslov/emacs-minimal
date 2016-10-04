@@ -1,7 +1,7 @@
 
 
 ```
-M-x byte-compile rainbow-delimiters.el
+M-x byte-compile rainbow-delimiters.el 
 ```
 
 
