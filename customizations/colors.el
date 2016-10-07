@@ -4,13 +4,10 @@
 (add-to-list 'load-path (get-full-path "themes/emacs-color-theme-solarized/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/emacs-color-theme-solarized/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/monokai-emacs/"))
-(add-to-list 'load-path (get-full-path "themes/spacemacs-theme/"))
 
-;;(setq frame-background-mode 'light)
-;;(setq frame-background-mode 'dark)
-;; (set-frame-parameter nil 'background-mode 'dark)
-(load-theme 'solarized t)
-(enable-theme 'solarized)
+;; (add-to-list 'load-path (get-full-path "themes/spacemacs-theme/"))
+(add-to-list 'custom-theme-load-path (get-full-path "themes/spacemacs-theme/"))
+(load (get-full-path "themes/spacemacs-theme/spacemacs-common.el"))
 
 (defun monokai ()
   (interactive)
@@ -38,3 +35,9 @@
   (interactive)
   (load-theme 'spacemacs-light t)
   (enable-theme 'spacemacs-light))
+
+;;;; (setq frame-background-mode 'light)
+;;;; (setq frame-background-mode 'dark)
+;;;; (set-frame-parameter nil 'background-mode 'dark)
+(load-theme 'solarized t)
+(load-theme 'spacemacs-dark t)
