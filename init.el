@@ -113,3 +113,14 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (auto-fill-mode t)
 ;; END AUTO FILL MODE
+
+;;;; Show trailing whitespace
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Useless-Whitespace.html
+;; This (for some reason) anly activates it only in the current buffer (not interactively)
+;; > (setq show-trailing-whitespace t)
+;; 
+(defun tf-toggle-show-trailing-whitespace ()
+  "Toggle show-trailing-whitespace between t and nil"
+  (interactive)
+  (setq show-trailing-whitespace (not show-trailing-whitespace)))
+;;;; END Show trailing whitespace
