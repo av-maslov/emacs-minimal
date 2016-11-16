@@ -106,3 +106,5 @@
 (load "lisp-settings.el")
 (load "paredit-settings.el")
 (load "rainbow-delimiters-settings.el")
+
+(load "activate-markdown-mode.el")
