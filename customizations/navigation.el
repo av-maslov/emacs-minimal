@@ -7,12 +7,20 @@
 (global-hl-line-mode 1)
 (global-linum-mode 1)
 
-;; Key bindings
+;;;; START Key bindings
 (global-set-key (kbd "C-l") 'goto-line)
 (global-set-key [S-up] 'backward-paragraph)      ;; Jump to previous paragraph
 (global-set-key [S-down] 'forward-paragraph)     ;; Jump to next paragraph
 ;; Switch window with Ctrl-TAB 
 (global-set-key [C-tab] 'other-window)
+
+;; Add new line without breaking the current line
+(defun end-of-line-and-indented-new-line ()
+  (interactive)
+  (end-of-line)
+  (newline-and-indent))
+(global-set-key (kbd "<C-return>") 'end-of-line-and-indented-new-line)
+;;;; END Key bindings
 
 ;; iBufer: http://emacswiki.org/emacs/IbufferMode
 (global-set-key (kbd "C-x C-b") 'ibuffer)

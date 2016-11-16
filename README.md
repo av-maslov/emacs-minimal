@@ -1,4 +1,14 @@
 
+# Some custom key-bindings
+
+```
+C-c S : easy motion 
+C-l   : go to line
+C RET : New line without breaking the current line
+C TAB : other window 
+```
+
+# Packages requiring compilation
 
 ```
 M-x byte-compile rainbow-delimiters.el 
