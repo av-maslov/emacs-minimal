@@ -126,3 +126,8 @@
 ;;;; END Show trailing whitespace
 
 (load "activate-markdown-mode.el")
+
+;;; START PANDOC/MARKDOWN COMMAND
+(custom-set-variables
+ '(markdown-command "C:/Users/amaslov/AppData/Local/Pandoc/pandoc.exe"))
+;;; END PANDOC/MARKDOWN COMMAND 
