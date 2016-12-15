@@ -128,6 +128,8 @@
 (load "activate-markdown-mode.el")
 
 ;;; START PANDOC/MARKDOWN COMMAND
+;;; C-c C-c m
+;;; C-c C-c p (preview)
 (custom-set-variables
  '(markdown-command "C:/Users/amaslov/AppData/Local/Pandoc/pandoc.exe"))
 ;;; END PANDOC/MARKDOWN COMMAND 
