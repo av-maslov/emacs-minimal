@@ -14,6 +14,21 @@ C RET : New line without breaking the current line
 C TAB : other window 
 ```
 
+# Packages requiring installation from MELPA
+
+```
+M-x package-list-pcakages
+```
+or
+```
+M-x package-install
+```
+
+- [auto-complete/auto-complete](https://github.com/auto-complete/auto-complete) , http://auto-complete.org
+- [magit-status](http://magit.vc/)
+- [symon](https://melpa.org/?utm_source=dlvr.it&utm_medium=twitter#/symon) tiny graphical system monitor
+
+
 # Packages requiring compilation
 
 ```
@@ -32,10 +47,4 @@ Preinstalled packages:
 - [SrSpeedbar](http://www.emacswiki.org/emacs/SrSpeedbar)
 - [scala-mode2](https://github.com/hvesalai/scala-mode2)
 
-The next packages are installed using package manager
 
-     M-x package-list-packages
-
-- [auto-complete](https://github.com/auto-complete/auto-complete)
-- [magit-status](http://magit.vc/)
-- [symon](https://melpa.org/?utm_source=dlvr.it&utm_medium=twitter#/symon) tiny graphical system monitor
