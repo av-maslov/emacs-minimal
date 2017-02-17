@@ -1,3 +1,4 @@
+(setq-default fill-column 65)
 
 ;; Ocaml; git clone https://github.com/ocaml/tuareg
 ;;(add-to-list 'load-path "D:/../tuareg/")
