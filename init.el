@@ -95,7 +95,7 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (auto-complete-mode t)
-(global-auto-complete-mode 1)
+(global-auto-complete-mode t)
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 ;; End Auto-complete
 ;;-------------------- END YASNIPPET AND AUTOCOMPLETE ---------------------;;
