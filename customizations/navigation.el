@@ -8,7 +8,7 @@
 (global-linum-mode 1)
 
 ;;;; START Key bindings
-(global-set-key (kbd "C-l") 'goto-line)
+;; (global-set-key (kbd "C-l") 'goto-line) ;; Better use it for buffer centering
 (global-set-key [S-up] 'backward-paragraph)      ;; Jump to previous paragraph
 (global-set-key [S-down] 'forward-paragraph)     ;; Jump to next paragraph
 ;; Switch window with Ctrl-TAB 
