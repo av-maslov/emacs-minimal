@@ -8,6 +8,14 @@
 (setq path-to-emacsd "C:/MyTemp/_emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
+
+
+(setq backup-directory-alist
+      `((".*" . , "D:/_tmp/emacstemp/")))
+
+(setq auto-save-file-name-transforms
+      `((".*" , "D:/_tmp/emacstemp/" t)))
+
 ;;; After symon is installed
 ;; (require 'symon)
 ;; (add-to-list 'load-path path-to-emacsd)
