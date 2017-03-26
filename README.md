@@ -26,6 +26,7 @@ M-x package-install
 
 - [auto-complete/auto-complete](https://github.com/auto-complete/auto-complete) , http://auto-complete.org
 - [magit-status](http://magit.vc/)
+- [slime](https://common-lisp.net/project/slime/)
 - [symon](https://melpa.org/?utm_source=dlvr.it&utm_medium=twitter#/symon) tiny graphical system monitor
 
 
