@@ -4,6 +4,10 @@
 ;;(setq inferior-lisp-program "D://MyTemp//LispStuff//SBCL//sbcl.exe")
 (load "slime.el")
 (require 'slime-autoloads)
+;; Start: from the video file https://common-lisp.net/project/slime/#documentation
+(add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
+(add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
+;; End: from the video file https://common-lisp.net/project/slime/#documentation
 ;;;; END Llisp
 
 (defvar slime-repl-font-lock-keywords lisp-font-lock-keywords-2)
