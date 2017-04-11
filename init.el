@@ -37,7 +37,10 @@
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
-(require 'sr-speedbar) ;; sr-speedbar-open/close
+;;
+;; Caused Warning (bytecomp): reference to free variable ‘helm-alive-p’ 
+;; (require 'sr-speedbar) ;; sr-speedbar-open/close
+;;
 ;; Load following files if these packages have already been installed using package manager
 ;; M-x package-list-packages
 ;; (load "magit.el")
