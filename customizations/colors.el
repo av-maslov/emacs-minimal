@@ -5,6 +5,13 @@
 (add-to-list 'custom-theme-load-path (get-full-path "themes/emacs-color-theme-solarized/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/monokai-emacs/"))
 
+;; Start 2017.04.16
+(add-to-list 'custom-theme-load-path (get-full-path "themes/dark-mint-theme/"))
+(defun dark-mint ()
+  (interactive)
+  (load-theme 'dark-mint))
+;; End 2017.04.16
+
 ;; (add-to-list 'load-path (get-full-path "themes/spacemacs-theme/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/spacemacs-theme/"))
 (load (get-full-path "themes/spacemacs-theme/spacemacs-common.el"))
