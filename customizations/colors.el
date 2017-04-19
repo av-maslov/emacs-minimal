@@ -8,6 +8,11 @@
 ;;;; Start 2017.04.16
 (add-to-list 'custom-theme-load-path (get-full-path "themes/dark-mint-theme/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/spolsky-theme/"))
+(add-to-list 'custom-theme-load-path (get-full-path "themes/dracula-theme/"))
+
+(defun dracula ()
+  (interactive)
+  (load-theme 'dracula))
 
 (defun spolsky ()
   (interactive)
