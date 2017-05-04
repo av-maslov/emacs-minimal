@@ -60,6 +60,12 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 ;;-------------------- END PACKAGE DIRECTORIES MELPA
+
+;;------------------- Cider (Clojure)
+(load "clojure-settings.el")
+;;------------------- End Cider (Clojure)
+
+
 ;;------------------- HASKELL MODE
 (require 'cl-lib)
 (load "haskellmode.el")
