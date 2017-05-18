@@ -1,8 +1,9 @@
 (setq-default fill-column 65)
 
 ;; Ocaml; git clone https://github.com/ocaml/tuareg
-;;(add-to-list 'load-path "D:/../tuareg/")
-;;(load "D:/../tuareg/tuareg.el")
+;; git clone https://github.com/ocaml/tuareg.git 
+;;(add-to-list 'load-path "~/tuareg/")
+;;(load "~/tuareg/tuareg.el")
 
 (setq path-to-emacsd "~/.emacs.d/")
 (defun get-full-path (subpath)
