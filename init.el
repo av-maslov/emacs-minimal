@@ -62,13 +62,13 @@
 ;;-------------------- END PACKAGE DIRECTORIES MELPA
 
 ;;------------------- Cider (Clojure)
-(load "clojure-settings.el")
+;;(load "clojure-settings.el")
 ;;------------------- End Cider (Clojure)
 
 
 ;;------------------- HASKELL MODE
-(require 'cl-lib)
-(load "haskellmode.el")
+;;(require 'cl-lib)
+;;(load "haskellmode.el")
 ;;------------------- END HASKELL MODE
 ;;-------------------- Vim mode 
 ;; (require 'evil)
