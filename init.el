@@ -4,8 +4,7 @@
 ;;(add-to-list 'load-path "D:/../tuareg/")
 ;;(load "D:/../tuareg/tuareg.el")
 
-;; (setq path-to-emacsd "~/.emacs.d/")
-(setq path-to-emacsd "C:/MyTemp/_emacs.d/")
+(setq path-to-emacsd "~/.emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
 
@@ -152,9 +151,4 @@
  '(markdown-command "C:/Users/amaslov/AppData/Local/Pandoc/pandoc.exe"))
 ;;; END PANDOC/MARKDOWN COMMAND 
 
-;; Start Julia mode
-;; https://github.com/JuliaEditorSupport/julia-emacs
-;; Download and unzip into the plugins folder
-(add-to-list 'load-path (get-full-path "plugins/julia-emacs/"))
-(require 'julia-mode)
-;; End Julia mode 
+
