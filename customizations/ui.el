@@ -8,7 +8,7 @@
 
 ;; Disable tool- and menu- bars
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+;;(menu-bar-mode -1)
 
 ;; Highlight selection
 (transient-mark-mode t)
