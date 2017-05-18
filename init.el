@@ -28,7 +28,7 @@
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
 (add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
 ;;... Settings
-(load "settings.el")
+;; (load "settings.el") --no such file
 (load "colors.el")
 (load "focus.el")
 (load "ui.el")
