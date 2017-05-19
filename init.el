@@ -1,14 +1,8 @@
 (setq-default fill-column 65)
 
-;; Ocaml; git clone https://github.com/ocaml/tuareg
-;; git clone https://github.com/ocaml/tuareg.git 
-;;(add-to-list 'load-path "~/tuareg/")
-;;(load "~/tuareg/tuareg.el")
-
 (setq path-to-emacsd "~/.emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
-
 
 (setq backup-directory-alist
       `((".*" . , "D:/_tmp/emacstemp/")))
@@ -37,6 +31,7 @@
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
+(load "ocaml-settings.el")
 ;;
 ;; Caused Warning (bytecomp): reference to free variable ‘helm-alive-p’ 
 ;; (require 'sr-speedbar) ;; sr-speedbar-open/close
