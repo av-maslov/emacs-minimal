@@ -5,6 +5,20 @@
 (add-to-list 'custom-theme-load-path (get-full-path "themes/emacs-color-theme-solarized/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/monokai-emacs/"))
 
+(defun light ()
+  (interactive)
+  (load-theme 'solarized)
+  (set-frame-parameter nil 'background-mode 'light)
+  (setq frame-background-mode 'light)
+  (enable-theme 'solarized))
+
+(defun dark ()
+  (interactive)
+  (load-theme 'solarized)
+  (set-frame-parameter nil 'background-mode 'dark)
+  (setq frame-background-mode 'dark)
+  (enable-theme 'solarized))
+
 ;;;; Start 2017.04.16
 (add-to-list 'custom-theme-load-path (get-full-path "themes/dark-mint-theme/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/spolsky-theme/"))
@@ -31,18 +45,6 @@
   (interactive)
   (load-theme 'monokai t)
   (enable-theme 'monokai))
-
-(defun light ()
-  (interactive)
-  (set-frame-parameter nil 'background-mode 'light)
-  (setq frame-background-mode 'light)
-  (enable-theme 'solarized))
-
-(defun dark ()
-  (interactive)
-  (set-frame-parameter nil 'background-mode 'dark)
-  (setq frame-background-mode 'dark)
-  (enable-theme 'solarized))
 
 (defun spc-dark ()
   (interactive)
