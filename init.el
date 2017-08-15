@@ -21,6 +21,9 @@
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
 (add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
+;; scripts
+(add-to-list 'load-path (get-full-path "scripts/"))
+(load "move-line.el")
 ;;... Settings
 ;; (load "settings.el") --no such file
 (load "colors.el")
