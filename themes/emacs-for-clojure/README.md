@@ -1,0 +1,1 @@
+https://github.com/flyingmachine/emacs-for-clojure/tree/master/themes
