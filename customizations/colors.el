@@ -5,6 +5,23 @@
 (add-to-list 'custom-theme-load-path (get-full-path "themes/emacs-color-theme-solarized/"))
 (add-to-list 'custom-theme-load-path (get-full-path "themes/monokai-emacs/"))
 
+;;; Start emacs for clojure themes
+(add-to-list 'load-path (get-full-path "themes/emacs-for-clojure/"))
+(add-to-list 'custom-theme-load-path (get-full-path "themes/emacs-for-clojure/"))
+;;(load-theme 'tomorrow-night)
+;;(load-theme 'tomorrow-night-bright)
+;;(load-theme 'tomorrow-night-blue)
+;;(load-theme 'tomorrow-night-eighties)
+;;(load-theme 'zenburn)
+;; (require 'sunburn)
+;;(load-theme 'sunburn)
+(defun dark-clojure ()
+  (interactive)
+  (load-theme 'tomorrow-night-eighties)
+  (enable-theme 'tomorrow-night-eighties))
+;;;End Start emacs for clojure themes
+
+
 (defun light ()
   (interactive)
   (load-theme 'solarized)
