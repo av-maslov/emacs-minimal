@@ -1,5 +1,11 @@
 (setq-default fill-column 65)
 
+(setq inhibit-startup-message t) ;; No splash screen
+;;(setq initial-scratch-message nil) ;; No scratch message
+
+;;;; http://ergoemacs.org/emacs/emacs_toggle-word-wrap.html
+(setq tooggle-word-wrap t)
+
 (setq path-to-emacsd "~/.emacs.d/")
 (defun get-full-path (subpath)
   (concat path-to-emacsd subpath))
