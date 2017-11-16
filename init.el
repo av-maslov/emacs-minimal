@@ -125,7 +125,7 @@
 ;; Magit
 (global-set-key (kbd "C-x G") 'magit-status)
 
-(load "lisp-settings.el")
+;;(load "lisp-settings.el")
 (load "paredit-settings.el")
 (load "rainbow-delimiters-settings.el")
 
