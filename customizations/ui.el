@@ -23,7 +23,7 @@
 	    (calendar-set-date-style 'european)))
 	    
 ;; Set window size
-(when window-system (set-frame-size (selected-frame) 120 50))
+(when window-system (set-frame-size (selected-frame) 100 40))
 
 (require 'whitespace)
 ;; highlight long lines
