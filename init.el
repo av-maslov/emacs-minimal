@@ -11,10 +11,10 @@
   (concat path-to-emacsd subpath))
 
 (setq backup-directory-alist
-      `((".*" . , "D:/_tmp/emacstemp/")))
+      `((".*" . , "~/emacstemp/")))
 
 (setq auto-save-file-name-transforms
-      `((".*" , "D:/_tmp/emacstemp/" t)))
+      `((".*" , "~/emacstemp/" t)))
 
 ;;; After symon is installed
 ;; (require 'symon)
