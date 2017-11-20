@@ -1,7 +1,7 @@
 ;;; Start Ocaml settings
 ;; git clone https://github.com/ocaml/tuareg
-(add-to-list 'load-path "C:/1maslov/tuareg/")
-(load "C:/1maslov/tuareg/tuareg.el")
+(add-to-list 'load-path "~/tuareg/")
+(load "~/tuareg/tuareg.el")
 
 (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
     (autoload 'camldebug "camldebug" "Run the Caml debugger" t)
