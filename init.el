@@ -16,6 +16,11 @@
 (setq auto-save-file-name-transforms
       `((".*" , "~/emacstemp/" t)))
 
+;; ---------------------- AUTO INSTALL PACKAGES (If needed)
+(add-to-list 'load-path (get-full-path "~/.emacs.d/"))
+(load "~/.emacs.d/auto-install.el")
+;; ---------------------- End AUTO INSTALL PACKAGES (If needed)
+
 ;;; After symon is installed
 ;; (require 'symon)
 ;; (add-to-list 'load-path path-to-emacsd)
