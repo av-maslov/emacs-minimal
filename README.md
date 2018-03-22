@@ -1,4 +1,10 @@
 
+### [To clone into existing directory](https://stackoverflow.com/questions/9864728/how-to-get-git-to-clone-into-current-directory)
+
+```
+git clone https://github.com/av-maslov/emacs-minimal.git .
+```
+
 **For YA Snippet use** 
 ```
 Shift TAB
