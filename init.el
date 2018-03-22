@@ -45,7 +45,7 @@
 (load "smex.el")
 (load "acejump.el")
 (load "highlight-symbol.el")
-(load "ocaml-settings.el")
+;; (load "ocaml-settings.el")
 ;;
 ;; Caused Warning (bytecomp): reference to free variable ‘helm-alive-p’ 
 ;; (require 'sr-speedbar) ;; sr-speedbar-open/close
