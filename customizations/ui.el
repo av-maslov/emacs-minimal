@@ -5,6 +5,9 @@
 ;;(set-default-font "Lucida Console")
 ;;(set-default-font "Courier")
 ;;(set-default-font "Consolas") ;; used in windows
+;;;; Fira Code font: https://github.com/tonsky/FiraCode
+;;(set-default-font "Fira Code") 
+
 
 ;; Disable tool- and menu- bars
 (tool-bar-mode -1)
