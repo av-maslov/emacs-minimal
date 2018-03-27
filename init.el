@@ -32,6 +32,7 @@
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
 (add-to-list 'load-path (get-full-path "plugins/highlight-symbol/"))
 (add-to-list 'load-path (get-full-path "plugins/yasnippet/"))
+(add-to-list 'load-path (get-full-path "plugins/clojure-mode/"))
 ;; scripts
 (add-to-list 'load-path (get-full-path "scripts/"))
 (load "move-line.el")

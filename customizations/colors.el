@@ -76,5 +76,7 @@
 ;;;; (setq frame-background-mode 'light)
 ;;;; (setq frame-background-mode 'dark)
 ;;;; (set-frame-parameter nil 'background-mode 'dark)
-(load-theme 'solarized t)
-(load-theme 'spacemacs-dark t)
+;;(load-theme 'solarized t)
+;;(load-theme 'spacemacs-dark t)
+
+(dark-clojure)
