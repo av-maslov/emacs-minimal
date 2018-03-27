@@ -5,6 +5,16 @@
 git clone https://github.com/av-maslov/emacs-minimal.git .
 ```
 
+**Install Fira Code font**
+
+- https://github.com/tonsky/FiraCode
+
+Windows: 
+
+```
+choco install firacode
+```
+
 **For YA Snippet use** 
 ```
 Shift TAB
