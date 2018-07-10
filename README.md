@@ -1,8 +1,9 @@
 
-### [To clone into existing directory](https://stackoverflow.com/questions/9864728/how-to-get-git-to-clone-into-current-directory)
+### To clone
 
 ```
 git clone https://github.com/av-maslov/emacs-minimal.git ./.emacs.d
+git clone https://github.com/av-maslov/emacs-yasnippets.git ./.emacs.d/plugins-yasnippet-snippets
 ```
 
 **Install Fira Code font**
