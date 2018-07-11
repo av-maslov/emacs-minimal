@@ -80,3 +80,8 @@
 ;;(load-theme 'spacemacs-dark t)
 
 (dark-clojure)
+
+;;;;;; Set line number color
+;;;;;; https://stackoverflow.com/questions/21971940/how-to-set-color-for-linum-in-emacs
+;;(set-face-foreground 'linum "magenta")
+(set-face-foreground 'linum "darkgrey")
