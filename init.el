@@ -30,8 +30,8 @@
 ;; (require 'symon)
 ;; (add-to-list 'load-path path-to-emacsd)
 (add-to-list 'load-path (get-full-path "settings/"))
+(add-to-list 'load-path (get-full-path "settings/plugins-settings/"))
 (add-to-list 'load-path (get-full-path "customizations/"))
-(add-to-list 'load-path (get-full-path "customizations/packages/"))
 (add-to-list 'load-path (get-full-path "plugins/"))
 (add-to-list 'load-path (get-full-path "plugins/smex/"))
 (add-to-list 'load-path (get-full-path "plugins/aceJump/"))
@@ -60,7 +60,8 @@
 ;; M-x package-list-packages
 ;; (load "magit.el")
 ;; (load "scalamode.el")
-;; (load "emacsess.el")
+(load "emacs-ess.el")
+(load "emacs-ess-juliamode.el")
 ;;-------------------- PACKAGE DIRECTORIES MELPA
 (require 'package)
 (add-to-list 'package-archives

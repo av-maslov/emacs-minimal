@@ -2,8 +2,15 @@
 ### To clone
 
 ```
-git clone https://github.com/av-maslov/emacs-minimal.git ./.emacs.d
-git clone https://github.com/av-maslov/emacs-yasnippets.git ./.emacs.d/plugins-yasnippet-snippets
+git clone https://github.com/av-maslov/emacs-minimal.git ~/.emacs.d
+git clone https://github.com/av-maslov/emacs-yasnippets.git ~/.emacs.d/plugins-yasnippet-snippets
+```
+
+### Install ESS and Julia mode for it (CentOS)
+
+```
+git clone https://github.com/emacs-ess/ESS.git ~./ESS
+git clone https://github.com/JuliaEditorSupport/julia-emacs.git ~/.emacs.d/plugins/
 ```
 
 **Install Fira Code font**
