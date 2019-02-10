@@ -1,10 +1,5 @@
 (setq-default fill-column 65)
 
-(defun ap ()
-  (interactive)
-  (auto-complete-mode t)
-  (paredit-mode t))
-
 (setq inhibit-startup-message t) ;; No splash screen
 ;;(setq initial-scratch-message nil) ;; No scratch message
 
@@ -140,6 +135,11 @@
 ;;(load "lisp-settings.el")
 (load "paredit-settings.el")
 (load "rainbow-delimiters-settings.el")
+
+(defun ap ()
+  (interactive)
+  (auto-complete-mode t)
+  (paredit-mode t))
 
 ;; AUTO FILL MODE
 ;; https://www.emacswiki.org/emacs/AutoFillMode
