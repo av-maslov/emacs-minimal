@@ -56,7 +56,7 @@
 ;; (load "magit.el")
 ;; (load "scalamode.el")
 (load "emacs-ess.el")
-(load "emacs-ess-juliamode.el")
+(load "emacs-ess-juliamode.el") ;; Maybe should be before ess-mode.el
 ;;-------------------- PACKAGE DIRECTORIES MELPA
 (require 'package)
 (add-to-list 'package-archives
