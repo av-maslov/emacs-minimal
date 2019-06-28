@@ -9,7 +9,7 @@ git clone https://github.com/av-maslov/emacs-yasnippets.git ~/.emacs.d/plugins-y
 ### Install ESS and Julia mode for it (CentOS)
 
 ```
-git clone https://github.com/emacs-ess/ESS.git ~./ESS
+git clone https://github.com/emacs-ess/ESS.git ~/ESS
 git clone https://github.com/JuliaEditorSupport/julia-emacs.git ~/.emacs.d/plugins/
 ```
 
