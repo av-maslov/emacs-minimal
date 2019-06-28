@@ -13,6 +13,10 @@ git clone https://github.com/emacs-ess/ESS.git ~/ESS
 git clone https://github.com/JuliaEditorSupport/julia-emacs.git ~/.emacs.d/plugins/
 ```
 
+**Errors**
+
+- Mac: `error: Invalid face, linum`, caused by `colors.el`: `..linum, darkgrey theme?`
+
 **For ESS-mode**
 
 For brackets auto-closed ```M-x electric-pair-mode``` NOT `M-x paredit-mode` which adds extra space
