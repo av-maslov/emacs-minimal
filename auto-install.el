@@ -13,7 +13,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(setq package-list '(auto-complete))
+(setq package-list '(auto-complete magit))
 
 ;; install the missing packages
 (dolist (package package-list)
