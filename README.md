@@ -9,8 +9,25 @@ git clone https://github.com/av-maslov/emacs-yasnippets.git ~/.emacs.d/plugins-y
 ### Install ESS and Julia mode for it (CentOS)
 
 ```
+wget https://ess.r-project.org/downloads/ess/ess-18.10.2.tgz
+mkdir ESS
+tar xzvf ess-18.10.2.tgz -C ESS/
+rm ess-18.10.2.tgz
+rm -r ESS/ess-18.10.2
+```
+
+or
+
+```
 git clone https://github.com/emacs-ess/ESS.git ~/ESS
 git clone https://github.com/JuliaEditorSupport/julia-emacs.git ~/.emacs.d/plugins/
+```
+
+add 
+
+```
+(add-to-list 'load-path "~/ESS/lisp")
+(load "~/ESS/lisp/ess-site")
 ```
 
 **Errors**
