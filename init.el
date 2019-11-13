@@ -1,5 +1,9 @@
 (setq-default fill-column 65)
 
+;; org mode: no empty line 
+;; C-h v org-blank-before-new-entry 
+(setf org-blank-before-new-entry '((heading . nil) (plain-list-item . nil)))
+
 (setq inhibit-startup-message t) ;; No splash screen
 ;;(setq initial-scratch-message nil) ;; No scratch message
 
